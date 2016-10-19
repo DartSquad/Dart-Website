@@ -15,7 +15,7 @@
 }
 
 header {
-	@include sectionVerticalPadding();
+	padding-top: 20px;
 
 	.logo,
 	.company-name {
@@ -34,7 +34,6 @@ header {
 
 	.product-image {
 		width: 100%;
-		padding: 10px;
 
 		.slide-toggles {
 			list-style: none;
@@ -50,7 +49,6 @@ header {
 	}
 
 	.product-info {
-		padding: 10px;
 
 		.share-buttons {
 			list-style: none;
@@ -67,7 +65,11 @@ header {
 .testimonials {
 	width: 100%;
 	@include sectionVerticalPadding();
-
+	
+	.profiles {
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
 }
 
 .company-list {
