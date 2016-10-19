@@ -25,7 +25,7 @@ layout: main
       </p>
       <div class="row">
         <div class="col-xs-5">
-          <button class="btn btn-block add-to-cart">Add to Cart</button>
+          <button class="btn btn-block add-to-cart" data-toggle="modal" data-target="#add-modal">Add to Cart</button>
         </div>
         <div class="col-xs-7">
           <ul class="share-buttons">
@@ -116,4 +116,18 @@ layout: main
 </div>
 <div class="container-fluid google-map">
   <!-- Google Map -->
+</div>
+<div id="add-modal" class="modal fade">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Product Added Successfully!</p>
+      </div>
+    </div>
+  </div>
 </div>
