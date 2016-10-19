@@ -1,1 +1,95 @@
 @import 'lib/base';
+
+@mixin sectionVerticalPadding() {
+	$vertical-padding: 40px;
+	padding-top: $vertical-padding;
+	padding-bottom: $vertical-padding;
+}
+
+.bg-alt {
+	background-color: #f3f3f3;
+}
+
+.section-title {
+	text-align: center;
+}
+
+header {
+	@include sectionVerticalPadding();
+
+	.logo,
+	.company-name {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.company-name {
+		padding-left: 10px;
+	}
+}
+
+.product-slider {
+	width: 100%;
+	@include sectionVerticalPadding();
+
+	.product-image {
+		width: 100%;
+		padding: 10px;
+
+		.slide-toggles {
+			list-style: none;
+			padding: 10px 0 0 0;
+
+			.toggle {
+				width: 10px;
+				height: 10px;
+				background-color: #333;
+				display: inline-block;
+			}
+		}
+	}
+
+	.product-info {
+		padding: 10px;
+
+		.share-buttons {
+			list-style: none;
+			padding: 0;
+			float: right;
+
+			.share {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.testimonials {
+	width: 100%;
+	@include sectionVerticalPadding();
+
+}
+
+.company-list {
+	width: 100%;
+	@include sectionVerticalPadding();
+
+	.company-logo {
+		width: 100%;
+		padding: 10px;
+	}
+}
+
+footer {
+	width: 100%;
+	@include sectionVerticalPadding();
+
+	.share-buttons {
+		list-style: none;
+		padding: 0;
+
+		.share {
+			display: inline-block;
+		}
+	}
+}
