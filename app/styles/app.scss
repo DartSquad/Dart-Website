@@ -73,7 +73,7 @@ header {
 
 .testimonials {
 	@include sectionVerticalPadding();
-	
+
 	.profiles {
 		margin-left: 50%;
 		transform: translateX(-50%);
@@ -87,6 +87,11 @@ header {
 		width: 100%;
 		padding: 10px;
 	}
+}
+
+.google-map {
+	height: 300px;
+	padding: 0;
 }
 
 footer {

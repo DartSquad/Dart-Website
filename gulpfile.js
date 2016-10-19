@@ -96,7 +96,7 @@ gulp.task('watch:scripts', [ 'scripts' ], done => {
 
 gulp.task('watch', [ 'serve' ], () => {
   gulp.watch(styleSources, [ 'styles' ]);
-  gulp.watch(scriptSources, [ 'watch:scripts' ]);
+  gulp.watch([ './app/scripts/app.js', './app/scripts/lib/*.js' ], [ 'watch:scripts' ]);
   gulp.watch(path.join(__dirname, 'dist/*.html'), [ 'reload' ]);
 });
 
