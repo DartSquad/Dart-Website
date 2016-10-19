@@ -38,6 +38,16 @@ function setUserTestimonials() {
     });
 }
 
+function setCompanyInformation() {
+  $.get('https://json-data.herokuapp.com/darts/companies')
+    .done(data => {
+      const companyImages = $('.company-list').find('.company-logo');
+      for (let index = 0; index < 4; index++) {
+        $(companyImages[index]).attr('src', data.results[index].image_url);
+      }
+    });
+}
+
 function renderMap() {
   const target = {
     lat: 39.1053073,
@@ -65,6 +75,7 @@ function init() {
 
   setProductInformation();
   setUserTestimonials();
+  setCompanyInformation();
   renderMap();
 }
 
