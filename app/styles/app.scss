@@ -40,22 +40,25 @@ header {
 
 .product-slider {
 	@include sectionVerticalPadding();
+  padding-bottom: 80px;
 
-	.product-image {
-		width: 100%;
+	#carouselSlider {
+    position: relative;
 
-		.slide-toggles {
-			list-style: none;
-			padding: 10px 0 0 0;
+    .carousel-indicators {
+      position: absolute;
+      bottom: -40px;
 
-			.toggle {
-				width: 10px;
-				height: 10px;
-				background-color: #333;
-				display: inline-block;
-			}
-		}
-	}
+      li {
+        border-color: #E6E9ED;
+
+        &.active {
+          background-color: #DA4453;
+          border-color: #DA4453;
+        }
+      }
+    }
+  }
 
 	.product-info {
 
