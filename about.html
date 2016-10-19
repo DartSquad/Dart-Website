@@ -12,11 +12,14 @@
 <body>
   <div class="container">
     <header class="row">
-      <div class="col-xs-4">
+      <div class="col-xs-8 col-md-4">
         <img class="logo" src="http://placehold.it/30x30/" />
         <h1 class="company-name">Dart Website</h1>
       </div>
-      <div class="col-xs-8">
+      <div class="col-xs-4 col-md-8 navigation-wrapper">
+        <div class="menu-icon">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
         <ul class="navigation">
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
