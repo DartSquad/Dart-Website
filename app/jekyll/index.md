@@ -41,7 +41,7 @@ layout: main
         Ea voluptatum illum officia nostrum mollitia, id magnam, aliquid nemo omnis odio.
         Perspiciatis consequatur mollitia nobis, officia, nihil fugiat possimus quisquam! Totam!
       </p>
-      <div class="row">
+      <div class="row share-item-block">
         <div class="col-xs-5">
           <button class="btn btn-block add-to-cart" data-toggle="modal" data-target="#add-modal">Add to Cart</button>
         </div>

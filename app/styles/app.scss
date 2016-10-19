@@ -6,12 +6,17 @@
 	padding-bottom: $vertical-padding;
 }
 
+body {
+  font-size: 14px;
+}
+
 .bg-alt {
 	background-color: #f3f3f3;
 }
 
 .section-title {
 	text-align: center;
+  padding: 0 0 20px;
 }
 
 header {
@@ -29,11 +34,24 @@ header {
 
   .navigation {
     list-style: none;
+    margin-top: -5px;
     float: right;
 
     li {
+      font-weight: bold;
       display: inline-block;
       padding: 10px 15px;
+
+      a {
+        color: #333;
+        padding-bottom: 5px;
+        text-decoration: none;
+
+        &:hover {
+          color: #DA4453;
+          border-bottom: 2px solid #DA4453;
+        }
+      }
     }
   }
 }
@@ -62,15 +80,36 @@ header {
 
 	.product-info {
 
-		.share-buttons {
-			list-style: none;
-			padding: 0;
-			float: right;
+    h2 {
+      font-size: 1.8em;
+      padding-bottom: 15px;
+    }
 
-			.share {
-				display: inline-block;
-			}
-		}
+    .share-item-block {
+      padding-top: 15px;
+
+      .add-to-cart {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #ED5565;
+        color: white;
+        font-size: 1em;
+
+        &:hover {
+          background-color: #DA4453;
+        }
+      }
+
+      .share-buttons {
+        list-style: none;
+        padding: 6px 0 0 0;
+        float: right;
+
+        .share {
+          display: inline-block;
+        }
+      }
+    }
 	}
 }
 
@@ -81,6 +120,14 @@ header {
 		margin-left: 50%;
 		transform: translateX(-50%);
     text-align: center;
+
+    h3 {
+      padding: 15px 0 10px;
+    }
+
+    p {
+      padding-bottom: 15px;
+    }
 
     .profile-picture {
       border-radius: 50%;
