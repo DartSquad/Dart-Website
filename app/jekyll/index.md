@@ -1,26 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+---
+title: Dart Website
+permalink: '/'
+layout: home
+---
 
-  <link rel="stylesheet" href="styles/app.bundle.css" />
-
-  <title>Dart Website</title>
-</head>
-
-<body>
-  <div class="container">
+<div class="container">
   <header class="row">
     <div class="col-xs-12">
-      <img class="logo" src="http://placehold.it/30x30/" />
-      <h1 class="company-name">Dart Website</h1>
+      <img class="logo" src="http://placehold.it/30x30/">
+      <h1 class="company-name">{{ page.title }}</h1>
     </div>
   </header>
   <div class="row product-slider">
     <div class="col-md-7">
       <div class="product-image">
-        <img class="image" src="http://placehold.it/600x300" />
+        <img class="image" src="http://placehold.it/600x300">
         <ul class="slide-toggles">
           <li class="toggle"></li>
           <li class="toggle"></li>
@@ -41,10 +35,10 @@
         </div>
         <div class="col-xs-7">
           <ul class="share-buttons">
-            <li class="share"><img src="http://placehold.it/30x30" /></li>
-            <li class="share"><img src="http://placehold.it/30x30" /></li>
-            <li class="share"><img src="http://placehold.it/30x30" /></li>
-            <li class="share"><img src="http://placehold.it/30x30" /></li>
+            <li class="share"><img src="http://placehold.it/30x30"></li>
+            <li class="share"><img src="http://placehold.it/30x30"></li>
+            <li class="share"><img src="http://placehold.it/30x30"></li>
+            <li class="share"><img src="http://placehold.it/30x30"></li>
           </ul>
         </div>
       </div>
@@ -64,7 +58,7 @@
           <div class="row">
             <!-- section content -->
             <div class="col-md-4">
-              <img class="profile-picture" src="http://placehold.it/100x100" />
+              <img class="profile-picture" src="http://placehold.it/100x100">
               <h3>Name</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -73,7 +67,7 @@
               </p>
             </div>
             <div class="col-md-4">
-              <img class="profile-picture" src="http://placehold.it/100x100" />
+              <img class="profile-picture" src="http://placehold.it/100x100">
               <h3>Name</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -82,7 +76,7 @@
               </p>
             </div>
             <div class="col-md-4">
-              <img class="profile-picture" src="http://placehold.it/100x100" />
+              <img class="profile-picture" src="http://placehold.it/100x100">
               <h3>Name</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -105,16 +99,16 @@
   <div class="row">
     <!-- section content -->
     <div class="col-md-3">
-      <img class="company-logo" src="http://placehold.it/300x300" />
+      <img class="company-logo" src="http://placehold.it/300x300">
     </div>
     <div class="col-md-3">
-      <img class="company-logo" src="http://placehold.it/300x300" />
+      <img class="company-logo" src="http://placehold.it/300x300">
     </div>
     <div class="col-md-3">
-      <img class="company-logo" src="http://placehold.it/300x300" />
+      <img class="company-logo" src="http://placehold.it/300x300">
     </div>
     <div class="col-md-3">
-      <img class="company-logo" src="http://placehold.it/300x300" />
+      <img class="company-logo" src="http://placehold.it/300x300">
     </div>
   </div>
 </div>
@@ -129,47 +123,3 @@
 <div class="container-fluid google-map">
   <!-- Google Map -->
 </div>
-
-  <div class="container-fluid bg-alt">
-    <footer class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <!-- footer block -->
-          <h4>Heading</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Eius adipisci provident aliquam et debitis! Sint modi, quas beatae officiis.
-          </p>
-        </div>
-        <div class="col-md-3">
-          <!-- footer block -->
-          <h4>Heading</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Eius adipisci provident aliquam et debitis! Sint modi, quas beatae officiis.
-          </p>
-        </div>
-        <div class="col-md-3">
-          <!-- footer block -->
-          <h4>Heading</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Eius adipisci provident aliquam et debitis! Sint modi, quas beatae officiis.
-          </p>
-        </div>
-        <div class="col-md-3">
-          <!-- footer block -->
-          <h4>Heading</h4>
-          <ul class="share-buttons">
-            <li class="share"><img src="http://placehold.it/30x30"></li>
-            <li class="share"><img src="http://placehold.it/30x30"></li>
-            <li class="share"><img src="http://placehold.it/30x30"></li>
-            <li class="share"><img src="http://placehold.it/30x30"></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script src="scripts/app.bundle.js"></script>
-</body>
-</html>
