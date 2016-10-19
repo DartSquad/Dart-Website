@@ -29,7 +29,6 @@ header {
 }
 
 .product-slider {
-	width: 100%;
 	@include sectionVerticalPadding();
 
 	.product-image {
@@ -63,7 +62,6 @@ header {
 }
 
 .testimonials {
-	width: 100%;
 	@include sectionVerticalPadding();
 	
 	.profiles {
@@ -73,7 +71,6 @@ header {
 }
 
 .company-list {
-	width: 100%;
 	@include sectionVerticalPadding();
 
 	.company-logo {
@@ -83,7 +80,6 @@ header {
 }
 
 footer {
-	width: 100%;
 	@include sectionVerticalPadding();
 
 	.share-buttons {
