@@ -77,6 +77,11 @@ header {
 	.profiles {
 		margin-left: 50%;
 		transform: translateX(-50%);
+    text-align: center;
+
+    .profile-picture {
+      border-radius: 50%;
+    }
 	}
 }
 
