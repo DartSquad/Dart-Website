@@ -1,16 +1,10 @@
 ---
 title: Dart Website
 permalink: '/'
-layout: home
+layout: main
 ---
 
 <div class="container">
-  <header class="row">
-    <div class="col-xs-12">
-      <img class="logo" src="http://placehold.it/30x30/">
-      <h1 class="company-name">{{ page.title }}</h1>
-    </div>
-  </header>
   <div class="row product-slider">
     <div class="col-md-7">
       <div class="product-image">
