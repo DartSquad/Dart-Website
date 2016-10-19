@@ -4,7 +4,8 @@ global.Tether = require('tether');
 require('bootstrap');
 
 function init() {
-  // TODO: Content goes here
+  const homeMap = require('./lib/home-map.js');
+  homeMap.init();
 }
 
 $(document).ready(init);
