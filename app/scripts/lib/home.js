@@ -24,37 +24,38 @@ function renderMap() {
   });
 }
 
-function displayProfilePictures(profiles) {
-  const profilePictures = $('.profiles').find('.profile-picture');
+function setUserTestimonials() {
+  $.get('https://json-data.herokuapp.com/darts/testimonials')
+    .done(testimonials => {
+      const profiles = $('.profiles');
+      const profilePictures = $('.profile-picture');
+      const profileNames = profiles.find('h3');
+      const profileTestimonials = profiles.find('p');
 
-  for (let index = 0; index < 3; index++) {
-    $(profilePictures[index]).attr('src', profiles[index].picture.large);
-  }
-}
-
-function displayProfileNames(profiles) {
-  const profileNames = $('.profiles').find('h3');
-
-  for (let index = 0; index < 3; index++) {
-    const firstName = profiles[index].name.first.charAt(0).toUpperCase() + profiles[index].name.first.slice(1);
-    const lastName = profiles[index].name.last.charAt(0).toUpperCase() + profiles[index].name.last.slice(1);
-
-    $(profileNames[index]).html(`${firstName} ${lastName}`);
-  }
-}
-
-function getProfiles() {
-  $.get('https://randomuser.me/api/?results=3')
-    .done(data => {
-      displayProfilePictures(data.results);
-      displayProfileNames(data.results);
+      for (let index = 0; index < 3; index++) {
+        if (index != 2) {
+          $.get('https://api.randomuser.me/?gender=female')
+            .done(profile => {
+              $(profilePictures[index]).attr('src', profile.results[0].picture.large);
+              $(profileNames[index]).html(testimonials.results[index].name);
+              $(profileTestimonials[index]).html(testimonials.results[index].review);
+            });
+        } else {
+          $.get('https://api.randomuser.me/?gender=male')
+            .done(profile => {
+              $(profilePictures[index]).attr('src', profile.results[0].picture.large);
+              $(profileNames[index]).html(testimonials.results[index].name);
+              $(profileTestimonials[index]).html(testimonials.results[index].review);
+            });
+        }
+      }
     });
 }
 
 function init() {
   GoogleMapsLoader.KEY = 'AIzaSyBZjNKYJzp1VU407Gah8uOUVHZjC7jLX1U';
 
-  getProfiles();
+  setUserTestimonials();
   renderMap();
 }
 
