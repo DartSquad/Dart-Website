@@ -32,6 +32,10 @@ header {
 		padding-left: 10px;
 	}
 
+  .menu-icon {
+    float: right;
+  }
+
   .navigation {
     list-style: none;
     margin-top: -5px;
@@ -50,6 +54,50 @@ header {
         &:hover {
           color: #DA4453;
           border-bottom: 2px solid #DA4453;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header {
+    position: relative;
+
+    .navigation-wrapper:hover {
+
+      .menu-icon {
+        background-color: #DA4453;
+      }
+
+      .navigation {
+        display: block;
+      }
+    }
+
+    .menu-icon {
+      float: right;
+    }
+
+    .navigation {
+      position: absolute;
+      background-color: #DA4453;
+      padding: 15px;
+      top: 30px;
+      right: 0;
+      z-index: 100;
+      display: none;
+
+      li {
+        width: 100px;
+        display: block;
+
+        a {
+          color: #f4f4f4;
+
+          &:hover {
+            color: white;
+          }
         }
       }
     }
