@@ -66,7 +66,7 @@ layout: main
         </div>
       </div>
       <div class="row">
-        <div class="col-md-8 profiles">
+        <div class="col-md-8 offset-md-2 profiles">
           <div class="row">
             <!-- section content -->
             <div class="col-md-4">
