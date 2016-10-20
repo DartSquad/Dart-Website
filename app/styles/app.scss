@@ -53,7 +53,7 @@ header {
 
   .menu-icon {
     padding: 5px 10px;
-    margin-top: -6px;
+    margin-top: -3px;
     float: right;
     display: none;
   }
@@ -104,22 +104,30 @@ header {
     .navigation {
       position: absolute;
       background-color: $color-main;
-      padding: 15px;
+      padding: 0;
       top: 30px;
       right: 15px;
       z-index: 100;
       display: none;
 
       li {
-        width: 100px;
+        width: 155px;
+        padding: 10px 15px;
         display: block;
+        overflow: hidden;
 
         a {
           color: #f4f4f4;
+          padding: 10px 15px;
 
           &:hover {
             color: white;
+            border-bottom: none;
           }
+        }
+
+        &:hover {
+          background-color: darken($color-main, 20);
         }
       }
     }
