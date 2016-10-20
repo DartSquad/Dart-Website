@@ -263,18 +263,29 @@ footer {
 // ----------------------------------------
 .product-list {
 
-  .product-title {
-    width: 100%;
-    padding: 15px 0 5px;
+  .product {
+    padding: 15px;
+    background-color: #f4f4f4;
+    margin-bottom: 40px;
+    border: 2px solid #f4f4f4;
 
-    .product-price {
-      font-style: italic;
-      float: right;
+    .product-title {
+      width: 100%;
+      padding: 15px 0 5px;
+
+      .product-price {
+        font-style: italic;
+        float: right;
+      }
     }
-  }
 
-  .product-description {
-    padding-bottom: 40px;
+    .product-description {
+      padding-bottom: 40px;
+    }
+
+    &:hover {
+      border: 2px solid $color-main;
+    }
   }
 }
 
