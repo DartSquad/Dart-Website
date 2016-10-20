@@ -4,7 +4,7 @@ permalink: '/'
 layout: main
 ---
 
-<div class="container">
+<div class="container" data-page="home">
   <div class="row product-slider">
     <div class="col-md-7">
       <div id="carouselSlider" class="carousel slide" data-ride="carousel">
