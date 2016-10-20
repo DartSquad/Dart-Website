@@ -10,31 +10,35 @@ function setProductInformation() {
     });
 }
 
+function displayUserTestimonials(randomProfiles, testimonials) {
+  const profiles = $('.profiles');
+  const profilePictures = profiles.find('.profile-picture');
+  const profileNames = profiles.find('h3');
+  const profileTestimonials = profiles.find('p');
+
+
+  for (let index = 0; index < 3; index++) {
+    $(profilePictures[index]).attr('src', randomProfiles[index].picture.large);
+    $(profileNames[index]).html(testimonials[index].name);
+    $(profileTestimonials[index]).html(testimonials[index].review);
+  }
+}
+
 function setUserTestimonials() {
   $.get('https://json-data.herokuapp.com/darts/testimonials')
     .done(testimonials => {
-      const profiles = $('.profiles');
-      const profilePictures = $('.profile-picture');
-      const profileNames = profiles.find('h3');
-      const profileTestimonials = profiles.find('p');
+      testimonials = testimonials.results;
 
-      for (let index = 0; index < 3; index++) {
-        if (index != 2) {
-          $.get('https://api.randomuser.me/?gender=female')
+      $.get('https://api.randomuser.me/?gender=female&results=2')
+        .done(profiles => {
+          profiles = profiles.results;
+
+          $.get('https://api.randomuser.me/?gender=male&results=1')
             .done(profile => {
-              $(profilePictures[index]).attr('src', profile.results[0].picture.large);
-              $(profileNames[index]).html(testimonials.results[index].name);
-              $(profileTestimonials[index]).html(testimonials.results[index].review);
+              profiles.push(profile.results[0]);
+              displayUserTestimonials(profiles, testimonials);
             });
-        } else {
-          $.get('https://api.randomuser.me/?gender=male')
-            .done(profile => {
-              $(profilePictures[index]).attr('src', profile.results[0].picture.large);
-              $(profileNames[index]).html(testimonials.results[index].name);
-              $(profileTestimonials[index]).html(testimonials.results[index].review);
-            });
-        }
-      }
+        });
     });
 }
 
