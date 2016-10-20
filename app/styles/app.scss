@@ -1,11 +1,18 @@
 @import 'lib/base';
 
+$color-main: #DA4453;
+
 @mixin sectionVerticalPadding() {
 	$vertical-padding: 40px;
 	padding-top: $vertical-padding;
 	padding-bottom: $vertical-padding;
 }
 
+
+
+// ----------------------------------------
+// Global Styles
+// ----------------------------------------
 body {
   font-size: 14px;
 }
@@ -26,6 +33,11 @@ body {
   }
 }
 
+
+
+// ----------------------------------------
+// Header Styles
+// ----------------------------------------
 header {
 	padding-top: 20px;
 
@@ -62,8 +74,8 @@ header {
         text-decoration: none;
 
         &:hover {
-          color: #DA4453;
-          border-bottom: 2px solid #DA4453;
+          color: $color-main;
+          border-bottom: 2px solid $color-main;
         }
       }
     }
@@ -77,7 +89,7 @@ header {
     .navigation-wrapper:hover {
 
       .menu-icon {
-        background-color: #DA4453;
+        background-color: $color-main;
       }
 
       .navigation {
@@ -91,7 +103,7 @@ header {
 
     .navigation {
       position: absolute;
-      background-color: #DA4453;
+      background-color: $color-main;
       padding: 15px;
       top: 30px;
       right: 15px;
@@ -114,6 +126,10 @@ header {
   }
 }
 
+
+// ----------------------------------------
+// Product Slider (Carousel Section) Styles
+// ----------------------------------------
 .product-slider {
 	@include sectionVerticalPadding();
 
@@ -129,8 +145,8 @@ header {
         border-color: #E6E9ED;
 
         &.active {
-          background-color: #DA4453;
-          border-color: #DA4453;
+          background-color: $color-main;
+          border-color: $color-main;
         }
       }
     }
@@ -149,12 +165,12 @@ header {
       .add-to-cart {
         padding-top: 15px;
         padding-bottom: 15px;
-        background-color: #ED5565;
+        background-color: $color-main;
         color: white;
         font-size: 1em;
 
         &:hover {
-          background-color: #DA4453;
+          background-color: darken($color-main, 20);
         }
       }
 
@@ -171,6 +187,11 @@ header {
 	}
 }
 
+
+
+// ----------------------------------------
+// Testimonial Styles
+// ----------------------------------------
 .testimonials {
 	@include sectionVerticalPadding();
 
@@ -193,6 +214,11 @@ header {
 	}
 }
 
+
+
+// ----------------------------------------
+// Company List Styles
+// ----------------------------------------
 .company-list {
 	@include sectionVerticalPadding();
 
@@ -202,11 +228,21 @@ header {
 	}
 }
 
+
+
+// ----------------------------------------
+// Google Map Styles
+// ----------------------------------------
 .google-map {
 	height: 300px;
 	padding: 0;
 }
 
+
+
+// ----------------------------------------
+// Footer Styles
+// ----------------------------------------
 footer {
 	@include sectionVerticalPadding();
 
@@ -221,7 +257,10 @@ footer {
 }
 
 
-// Product Page
+
+// ----------------------------------------
+// Product Page Styles
+// ----------------------------------------
 .product-list {
 
   .product-title {
@@ -236,5 +275,59 @@ footer {
 
   .product-description {
     padding-bottom: 40px;
+  }
+}
+
+
+
+// ----------------------------------------
+// Contact Page Styles
+// ----------------------------------------
+.contact {
+  
+  form {
+    width: 100%;
+    padding-bottom: 40px;
+
+    .text-label,
+    .message-label {
+      padding: 20px 0 2px;
+    }
+
+    .text-input,
+    .message-input {
+      width: 100%;
+      border: 2px solid #f3f3f3;
+      padding: 5px;
+      outline: none;
+
+      &:focus {
+        border: 2px solid $color-main;
+      }
+    }
+
+    .contact-submit {
+      background-color: $color-main;
+      color: white;
+      font-size: 1em;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+  }
+
+  .location {
+
+    h4 {
+      padding-bottom: 15px;
+    }
+
+    .address {
+      padding: 20px 0 40px;
+
+      p {
+        padding: 5px 0;
+        margin: 0;
+      }
+    }
   }
 }
