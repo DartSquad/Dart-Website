@@ -246,6 +246,13 @@ header {
 footer {
 	@include sectionVerticalPadding();
 
+  .row {
+
+    div {
+      padding-bottom: 20px;
+    }
+  }
+
 	.share-buttons {
 		list-style: none;
 		padding: 0;
