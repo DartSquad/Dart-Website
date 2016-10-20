@@ -19,6 +19,13 @@ body {
   padding: 0 0 20px;
 }
 
+.page-title {
+  h1 {
+    font-size: 2.2em;
+    padding: 40px 0 20px;
+  }
+}
+
 header {
 	padding-top: 20px;
 
@@ -211,4 +218,23 @@ footer {
 			display: inline-block;
 		}
 	}
+}
+
+
+// Product Page
+.product-list {
+
+  .product-title {
+    width: 100%;
+    padding: 15px 0 5px;
+
+    .product-price {
+      font-style: italic;
+      float: right;
+    }
+  }
+
+  .product-description {
+    padding-bottom: 40px;
+  }
 }
