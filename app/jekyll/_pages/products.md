@@ -17,8 +17,7 @@ layout: main
       <h3 class="product-title">Lawn Darts<span class="product-price">$19.95</span></h3>
       <p class="product-description">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Aut fugiat nam sapiente aliquam soluta iusto alias. Commodi quisquam animi nobis dignissimos, 
-        neque enim quidem deserunt sunt esse beatae. Saepe, ab?
+        Aut fugiat nam sapiente aliquam soluta iusto alias.
       </p>
     </div>
     <!-- Item Block -->
@@ -27,8 +26,7 @@ layout: main
       <h3 class="product-title">Safety Darts<span class="product-price">$19.95</span></h3>
       <p class="product-description">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Aut fugiat nam sapiente aliquam soluta iusto alias. Commodi quisquam animi nobis dignissimos, 
-        neque enim quidem deserunt sunt esse beatae. Saepe, ab?
+        Aut fugiat nam sapiente aliquam soluta iusto alias.
       </p>
     </div>
     <!-- Item Block -->
@@ -37,8 +35,7 @@ layout: main
       <h3 class="product-title">Leathal Darts<span class="product-price">$19.95</span></h3>
       <p class="product-description">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Aut fugiat nam sapiente aliquam soluta iusto alias. Commodi quisquam animi nobis dignissimos, 
-        neque enim quidem deserunt sunt esse beatae. Saepe, ab?
+        Aut fugiat nam sapiente aliquam soluta iusto alias.
       </p>
     </div>
     <!-- Item Block -->
@@ -47,8 +44,7 @@ layout: main
       <h3 class="product-title">Board Darts<span class="product-price">$19.95</span></h3>
       <p class="product-description">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Aut fugiat nam sapiente aliquam soluta iusto alias. Commodi quisquam animi nobis dignissimos, 
-        neque enim quidem deserunt sunt esse beatae. Saepe, ab?
+        Aut fugiat nam sapiente aliquam soluta iusto alias.
       </p>
     </div>
   </div>
